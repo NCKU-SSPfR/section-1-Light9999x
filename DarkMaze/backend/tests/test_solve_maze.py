@@ -59,17 +59,24 @@ async def test_solver():
 
     for i in range(5):
         await move_request("down")
+
     await move_request("right")    
     await move_request("down")
+
     for i in range(2):
         await move_request("right")
+
     for i in range(4):
         await move_request("up")
+
     for i in range(2):
         await move_request("right")
+
     await move_request("down")
+
     for i in range(2):
         await move_request("right")
+        
     await move_request("down")
     await move_request("right")
     await move_request("down")
