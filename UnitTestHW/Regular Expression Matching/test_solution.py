@@ -17,7 +17,7 @@ testcases = [
 ]
 
 @pytest.mark.parametrize(["s", "p", "expected"], testcases)
-def test(s, p, expected):
+def test(solution):
     assert solution.isMatch(s, p) == expected
 
 """
